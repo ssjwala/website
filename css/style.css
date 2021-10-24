@@ -1,0 +1,727 @@
+*{
+margin: 0;
+padding: 0;
+font-size: 100%;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+height: 100%;
+transition: .3s all ease;
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+header{
+background-image: url(..//img/pop-bg.jpg);
+width: 100%;
+height: 100%;
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+transition: .3s all ease;
+}
+ .wrapper{
+
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    transition: .3s all ease;
+ }
+.condition h1{
+  color:silver;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+}
+
+.condition{
+
+margin: 0 auto;
+padding: 1rem;
+border: 1px solid rgb(20, 20, 20,0.8);
+background: rgb(19, 18, 18,0.7);
+}
+
+.condition a{
+color: silver;
+text-decoration: none;
+
+}
+ .flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+height: 100%;
+ }
+
+
+ .wrapper .box-a .pop-heading  {
+
+color: #fff;
+font-size: 2.6rem;
+text-align: right;
+padding: 1rem 0;
+line-height: 1rem;
+letter-spacing: 0.3 rem;
+font-weight: 500;
+}
+
+ .wrapper .box-a img{
+width: 100%;
+}
+
+.wrapper .box-a .para{
+color: #fff;
+padding: 2rem 0;
+font-size: 1.5rem;
+text-align: right;
+font-weight: 200;
+}
+
+.wrapper .box-a{
+width:47%;
+}
+
+ .d-flex{
+width: 45%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-content: space-between;
+align-items: center;
+text-align: center;
+}
+
+.menu{
+width: 45%;
+padding: 1.3rem 0;
+border: 1px solid #fff;
+transition: .3s all ease;
+margin-bottom: 2rem;
+}
+
+.menu:hover{
+background-color: rgb(139, 23, 206);
+}
+
+.wrapper .box-a i{
+font-size: 3rem;
+line-height: 5rem;
+padding: 0.6rem 0;
+color:silver;
+
+}
+
+.wrapper .box-a a{
+
+text-decoration: none;
+color: silver;
+font-weight: 100;
+}
+
+/* header area =============================================*/
+
+/* navigation====================***************************** */
+
+ .navigation{
+height: 50px;
+display: flex;
+align-content: space-between;
+justify-content: space-between;
+margin: 0 auto;
+border-bottom: 1px solid rgb(59, 57, 57,0.5);
+padding: 0 1rem;
+ }
+ /* hover nav area============================================================
+================================================= */
+
+.hover-line::after{
+content: '';
+display: block;
+width: 0%;
+height: 2px;
+background-color:#fff;
+}
+
+.hover-line:hover::after{
+width: 100%;
+transition:width 0.5s;
+}
+/* hover nav end==========================================================
+=============================**************************************** */
+.navigation nav ul a:hover{
+color: rgb(255, 174, 0);
+ } 
+
+.navigation .logo{
+padding: 0.4rem;
+
+}
+.navigation .logo a{
+color:silver;
+text-decoration: none;
+font-size: 2rem;
+
+}
+.navigation nav ul{
+display: flex;
+padding: 1rem 0;
+} 
+
+ .navigation nav ul a{
+color: silver;
+font-size:1rem;
+text-decoration: none;
+margin-right: 2rem;
+padding: 15px 0;
+transition: 0.3s all;
+line-height: 1rem;
+} 
+
+ .navigation nav ul li{
+ list-style: none;
+line-height: 0.5rem;
+font-weight: 100;
+font-size: 1.8rem;
+padding:  0 1.5rem;
+
+ } 
+
+/* toggle =================================***************
+************************************************* */
+
+
+#toggle{
+
+width: 27px;
+height: 24px;
+margin: 1rem;
+display: none;
+padding: 0 2px;
+position: fixed;
+top: 0;
+left:0
+
+} 
+
+ #toggle .bar-1{
+width: 100%;
+height:3px;
+background: rgb(255, 250, 250);
+margin:4px 0; 
+
+
+} 
+
+
+ #toggle .bar-2{
+width: 100%;
+height:3px;
+background: rgb(252, 245, 245);
+ margin:4px 0; 
+backface-visibility: hidden;
+
+} 
+
+ 
+ #toggle .bar-3{
+width: 100%;
+height:3px;
+background: rgb(253, 251, 251);
+margin: 4px 0;
+padding: 0 10px;
+backface-visibility: hidden;
+transition: all 0.6s;
+}   
+
+#toggle.on .bar-1{
+
+transform: rotate(35deg) translate(2px,1px);
+transition: all 0.6s;
+}
+
+#toggle.on .bar-2{
+
+opacity: 0;
+transition: all 0.6s;
+ }
+
+#toggle.on .bar-3 {
+
+transform: rotate(-35deg) translate(9px,-9px);
+transition: all 0.6s;
+}
+
+
+/* welcome= section=============************************
+************************ */
+
+.big-wrapper{
+background-color: #111;
+width: 100%;
+}
+
+
+.welcome-sec{
+display:flex ;
+justify-content:space-between ;
+flex-wrap: wrap;
+align-items: center;
+background-color:rgb(31, 29, 29);
+max-width: 900px;
+justify-content: space-around;
+transition: .3s all ease;
+}
+
+.big-wrapper .article{
+width: 45%;
+}
+
+.big-wrapper .article img{
+width: 100%;
+margin-bottom: 1.4rem ;
+
+}
+.big-wrapper .article h1{
+font-size: 2.2rem;
+color:silver;
+margin-bottom: 1.5rem;
+}
+
+.big-wrapper .article p{
+color:silver;
+margin:0.5rem 0;
+font-weight: 100;
+line-height: 1.8rem;
+font-size: 1.2rem;
+
+}
+
+.big-wrapper  .arti .para{
+line-height: 1.6rem;
+margin-top: 4rem;
+}
+
+.big-wrapper  .arti .para2{
+margin: 0.1rem 0;
+letter-spacing: 0;
+
+}
+
+.big-wrapper  .arti img{
+margin-top: 1.5rem;
+width: 100%;
+}
+
+/* our team strat============================================= */
+
+
+.our-section{
+background-color: rgba(12, 8, 8, 1);
+width: 100%;
+transition: .3s all ease;
+}
+
+.welcome-sec2{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.welcome-sec2 .article-a {
+width: 65%;
+color: silver;
+padding: 0 1rem;
+}
+.welcome-sec2 .article-b {
+width: 30%;
+padding: 0 1rem;
+}
+
+
+.welcome-sec2 .article-a h1{
+padding: 1rem 0;
+font-size: 3rem;
+font-weight: 500;
+color: silver;
+}
+.welcome-sec2 .article-a p{
+
+line-height: 1.7rem;
+font-size: 1.1rem;
+margin: 0.8rem  0;
+font-weight: 100;
+color:silver;
+}
+
+
+
+.welcome-sec2 .article-b img{
+margin-top: 7rem;
+width: 100%;
+}
+
+ .btn{
+width: 130px;
+height: 40px;
+margin-top: 2.5rem;
+background-color:rgba(201, 106, 18, 0.356);
+color: silver;
+border: none;
+cursor: pointer;
+transition: 0.5s;
+border-radius: 3px;
+}
+.btn:hover{
+background: rgb(44, 42, 177);
+color: #fff;
+}
+
+ .btn2 a{
+
+text-decoration: none;
+color:silver;
+}
+
+ .btn2 {
+background: rgb(230, 6, 6);
+width: 130px;
+height: 40px;
+transition: 0.5s all;
+border: none;
+border-radius: 3px;
+}
+ .btn2:hover {
+background: rgba(18, 201, 161, 0.356);
+}
+
+
+/* our work===============***************************************=== */
+.wrapper{
+padding: 1rem 0;
+}
+
+.our-work{
+background-color: black;  
+width: 100%;
+transition: .3s all ease;
+}
+
+.our-work .wrapper .heading{
+margin-bottom: 2rem; 
+max-width: 900px;
+ } 
+
+
+.our-work .wrapper .heading h1{
+font-size: 3rem;
+color:silver;
+font-weight: 500;
+
+} 
+.our-work .wrapper .heading p{
+
+color:silver; 
+padding: 1rem 0; 
+line-height: 1.5rem;
+font-size: 1.2rem;
+font-weight: 100;
+} 
+
+.container{
+padding: 0 0.4rem;
+}
+ 
+/* contact us==========*******************************================ */
+ 
+.contact{
+background-color: black;
+transition: .3s all ease;
+}
+
+.contact .form-sec{
+
+max-width: 900px;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+}
+
+.contact .form-sec input{
+/* background: none; */
+border: none;
+color:silver;
+background: rgba(41, 39, 39, 0.666);
+width: 49%;
+height: 3.8rem;
+margin-right: 0.3rem;
+}
+
+.contact .form-sec textarea{
+border: none;
+background: rgba(41, 39, 39, 0.666);
+width: 99%;
+margin-top: 1rem;
+color:silver;
+font-size: 1rem;
+}
+
+.contact .form-sec h1{
+font-size: 2rem;
+color:silver;
+}
+
+.contact .wr{
+width: 70%;
+background-color: rgba(35, 39, 48, 0.541);
+}
+
+.contact .form-sec p{
+font-size: 1.1rem;
+color: silver;
+padding: 2rem 0;
+font-weight: 100;
+}
+
+::placeholder{
+padding:  1rem 0.7rem;
+font-size: 1.2rem;
+}
+form{
+outline: none;
+}
+
+.contact .form-sec input:focus{
+outline: none;
+}
+
+.contact .form-sec textarea:focus{
+outline: none;
+}
+
+/* media query=================================================**
+************************************************************
+************************************************************ */
+
+@media (max-width:768px){
+/* nav media=============================== */
+
+.navigation{
+display: none;
+height: 100%;
+width: 100%; 
+left:0;
+top:10%;
+right: 0;
+position: absolute;
+position: fixed;
+background-color: rgb(24, 22, 22);
+z-index: 2;
+padding: 0 2rem;
+}
+
+.hover-line:hover::after{
+
+width: 20%;
+transition:width 0.5s;
+}
+
+/* toggle media==============================*******
+****************************** */
+
+#toggle{
+display: block;
+}
+
+.navigation nav ul{
+display: block;
+}
+
+
+.navigation nav ul li{
+
+line-height: 2.5rem;
+border-bottom: 1px solid rgb(54, 47, 47);
+}
+
+.navigation nav ul li a{
+font-size: 1.5rem;
+
+
+}
+.navigation .logo {
+font-size: 3rem;
+border-bottom: 1px solid silver;
+width: 100%;
+}
+
+.navigation .logo a{
+font-size: 3rem;
+letter-spacing: 0.5rem;
+}
+
+
+.big-wrapper .article{
+width: 80%;
+
+
+}
+.wrapper .box-a{
+width: 95%;
+padding: 0;
+margin: 1;
+}
+
+
+.wrapper{
+max-width: 450px;
+margin: 0 auto;
+}
+
+.menu{
+width: 45%;
+padding: 0.5rem 0;
+margin-bottom:1.3rem ;
+border: 1px solidsilver;
+}
+
+ .wrapper .box-a .pop-heading  {
+
+
+font-size: 2.7rem;
+text-align: center;
+line-height: 1rem;
+letter-spacing: 0.3 rem;
+font-weight: 500;
+}
+.wrapper .box-a .para{
+color:silver;
+padding: 2rem 0;
+font-size: 1.3rem;
+text-align: center;
+font-weight: 100;
+line-height: 1.8rem;
+}
+.condition{
+
+margin: 0 auto;
+padding: 1rem;
+border: 1px solid rgb(20, 20, 20,0.8);
+background: rgb(19, 18, 18,0.7);
+margin: 2rem 0;
+}
+.condition{
+width: 90%;
+
+}
+.big-wrapper  .arti{
+width: 100;
+}
+
+.welcome-sec2 .article-a {
+width: 100%;
+padding: 3rem;
+}
+
+.welcome-sec2 .article-b {
+width: 100%;
+}
+
+.welcome-sec2 .article-a h1{
+font-size: 2rem;
+
+}
+
+.welcome-sec2 .article-b img{
+width:84%;
+margin:0 1rem;
+text-align:center
+}
+
+
+.welcome-sec2 .article-a .btn{
+margin: 2rem 0;
+}
+
+.welcome-sec{
+max-width: 445px;
+}
+
+.our-work .wrapper .heading{
+margin-bottom: 2rem; 
+max-width: 900px;
+padding: 0 2rem;
+ } 
+
+
+.our-work .wrapper .heading h1{
+font-size: 3rem;
+color:silver;
+font-weight: 500;
+} 
+
+.our-work .wrapper .heading p{
+ color:silver; 
+ padding: 1rem 0; 
+ line-height: 1.9rem;
+font-size: 1.2rem;
+font-weight: 100;
+} 
+
+.contact .form-sec input{
+border: none;
+color:silver;
+background: rgba(41, 39, 39, 0.666);
+width: 100%;
+height: 3rem;
+margin-right: 0.3rem;
+margin-bottom: 1rem;
+}
+
+.contact .form-sec textarea{
+border: none;
+background: rgba(41, 39, 39, 0.666);
+width: 99%;
+margin-top: 1rem;
+color:silver;
+font-size: 1rem;
+height: 10rem;
+}
+}
+
+
+@media (max-width:468px){
+.wrapper{
+max-width: 380px;
+}
+
+
+}
+@media (max-width:568px){
+
+.navigation{
+width: 100%;
+height: 100%;
+left:0;
+top:10%;
+
+}
+.hover-line:hover::after{
+
+width: 50%;
+transition:width 0.5s;
+}
+
+}
+
+
+
+
+ 
+
+
+
